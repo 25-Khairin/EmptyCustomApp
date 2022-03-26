@@ -36,7 +36,7 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblPercentage = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnPause = new System.Windows.Forms.Button();
@@ -123,12 +123,12 @@
             this.lblStatus.TabIndex = 7;
             this.lblStatus.Text = "???";
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(78, 196);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(654, 23);
-            this.progressBar1.TabIndex = 8;
+            this.progressBar.Location = new System.Drawing.Point(78, 196);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(654, 23);
+            this.progressBar.TabIndex = 8;
             // 
             // lblPercentage
             // 
@@ -148,6 +148,7 @@
             this.btnStart.TabIndex = 10;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnPause
             // 
@@ -157,6 +158,7 @@
             this.btnPause.TabIndex = 11;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // btnResume
             // 
@@ -166,6 +168,7 @@
             this.btnResume.TabIndex = 12;
             this.btnResume.Text = "Resume";
             this.btnResume.UseVisualStyleBackColor = true;
+            this.btnResume.Click += new System.EventHandler(this.btnResume_Click);
             // 
             // lblDownloaded
             // 
@@ -231,7 +234,7 @@
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblPercentage);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBrowse);
@@ -258,7 +261,7 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label lblPercentage;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnPause;
