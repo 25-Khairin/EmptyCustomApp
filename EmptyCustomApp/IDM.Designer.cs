@@ -189,6 +189,7 @@
             this.lblDownmb.Size = new System.Drawing.Size(36, 15);
             this.lblDownmb.TabIndex = 14;
             this.lblDownmb.Text = "0 MB";
+            this.lblDownmb.Click += new System.EventHandler(this.lblDownmb_Click);
             // 
             // label3
             // 

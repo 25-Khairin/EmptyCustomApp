@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.btnidm = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -35,33 +36,27 @@
             // btnidm
             // 
             this.btnidm.BackColor = System.Drawing.Color.Transparent;
-            this.btnidm.Location = new System.Drawing.Point(12, 103);
+            resources.ApplyResources(this.btnidm, "btnidm");
             this.btnidm.Name = "btnidm";
-            this.btnidm.Size = new System.Drawing.Size(145, 24);
-            this.btnidm.TabIndex = 0;
-            this.btnidm.Text = "InternetDownloadManager";
             this.btnidm.UseVisualStyleBackColor = false;
             this.btnidm.Click += new System.EventHandler(this.btnidm_Click);
             // 
             // mainpanel
             // 
             this.mainpanel.BackColor = System.Drawing.Color.White;
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.mainpanel, "mainpanel");
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(800, 450);
-            this.mainpanel.TabIndex = 1;
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnidm);
             this.Controls.Add(this.mainpanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MainPage";
-            this.Text = "MainPage";
             this.ResumeLayout(false);
 
         }

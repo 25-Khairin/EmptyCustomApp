@@ -14,7 +14,7 @@ namespace EmptyCustomApp
     public partial class IDM : Form
     {
         private HttpDownloader httpDownload;
-        
+
         public IDM()
         {
             InitializeComponent();
@@ -24,14 +24,9 @@ namespace EmptyCustomApp
         {
             // Will Show User Save/Location Dialog 
             SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Title = "Save File Location";
             sfd.ShowDialog();
             txbSave.Text = sfd.FileName;
-        }
-
-        private void btnQuit_Click(object sender, EventArgs e)
-        {
-            // Exits Application
-            Application.Exit();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -48,7 +43,7 @@ namespace EmptyCustomApp
             progressBar.Value = (int)e.Progress;
             lblPercentage.Text = $"{e.Progress.ToString("0.00")} %";
             lblSpeed.Text = string.Format("{0} MB/s", (e.SpeedInBytes/ 1024d / 1024d).ToString("0.00"));
-            lblDownloaded.Text = string.Format("{0} MB/s", (httpDownload.TotalBytesReceived / 1024d / 1024d).ToString("0.00"));
+            lblDownmb.Text = string.Format("{0} MB/s", (httpDownload.TotalBytesReceived / 1024d / 1024d).ToString("0.00"));
             lblStatus.Text = "Downloading...";
         }
 
@@ -75,6 +70,17 @@ namespace EmptyCustomApp
             {
                 httpDownload.Resume();
             }
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            // Exits Application
+            Application.Exit();
+        }
+
+        private void lblDownmb_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
