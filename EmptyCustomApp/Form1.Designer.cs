@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnidm = new System.Windows.Forms.Button();
+            this.mainpanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnidm
@@ -40,6 +41,16 @@
             this.btnidm.TabIndex = 0;
             this.btnidm.Text = "InternetDownloadManager";
             this.btnidm.UseVisualStyleBackColor = false;
+            this.btnidm.Click += new System.EventHandler(this.btnidm_Click);
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.BackColor = System.Drawing.Color.White;
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(0, 0);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(800, 450);
+            this.mainpanel.TabIndex = 1;
             // 
             // MainPage
             // 
@@ -48,6 +59,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnidm);
+            this.Controls.Add(this.mainpanel);
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);
@@ -57,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnidm;
+        private System.Windows.Forms.Panel mainpanel;
     }
 }
 

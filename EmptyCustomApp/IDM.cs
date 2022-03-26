@@ -16,5 +16,17 @@ namespace EmptyCustomApp
         {
             InitializeComponent();
         }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.ShowDialog();
+            txbSave.Text = sfd.FileName;
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

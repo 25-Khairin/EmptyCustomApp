@@ -101,6 +101,7 @@
             this.btnBrowse.TabIndex = 5;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // label2
             // 
@@ -214,6 +215,7 @@
             this.btnQuit.TabIndex = 17;
             this.btnQuit.Text = "QUIT";
             this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // IDM
             // 
