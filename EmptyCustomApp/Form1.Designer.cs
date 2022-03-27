@@ -32,6 +32,7 @@
             this.btnidm = new System.Windows.Forms.Button();
             this.btnAppOpener = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
+            this.btnRanPass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnidm
@@ -56,11 +57,20 @@
             resources.ApplyResources(this.mainpanel, "mainpanel");
             this.mainpanel.Name = "mainpanel";
             // 
+            // btnRanPass
+            // 
+            this.btnRanPass.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnRanPass, "btnRanPass");
+            this.btnRanPass.Name = "btnRanPass";
+            this.btnRanPass.UseVisualStyleBackColor = false;
+            this.btnRanPass.Click += new System.EventHandler(this.btnRanPass_Click);
+            // 
             // MainPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Controls.Add(this.btnRanPass);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.btnAppOpener);
             this.Controls.Add(this.btnidm);
@@ -77,6 +87,7 @@
         private System.Windows.Forms.Button btnidm;
         private System.Windows.Forms.Button btnAppOpener;
         private System.Windows.Forms.Panel mainpanel;
+        private System.Windows.Forms.Button btnRanPass;
     }
 }
 

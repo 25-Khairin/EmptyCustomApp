@@ -42,5 +42,10 @@ namespace EmptyCustomApp
         {
             LoadForm(new AppOpener());
         }
+
+        private void btnRanPass_Click(object sender, EventArgs e)
+        {
+            LoadForm(new RandomPasswordGenerator());
+        }
     }
 }
