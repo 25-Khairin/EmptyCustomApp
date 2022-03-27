@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.btnidm = new System.Windows.Forms.Button();
+            this.btnAppOpener = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -41,9 +42,17 @@
             this.btnidm.UseVisualStyleBackColor = false;
             this.btnidm.Click += new System.EventHandler(this.btnidm_Click);
             // 
+            // btnAppOpener
+            // 
+            this.btnAppOpener.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnAppOpener, "btnAppOpener");
+            this.btnAppOpener.Name = "btnAppOpener";
+            this.btnAppOpener.UseVisualStyleBackColor = false;
+            this.btnAppOpener.Click += new System.EventHandler(this.btnAppOpener_Click);
+            // 
             // mainpanel
             // 
-            this.mainpanel.BackColor = System.Drawing.Color.White;
+            this.mainpanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.mainpanel, "mainpanel");
             this.mainpanel.Name = "mainpanel";
             // 
@@ -52,11 +61,13 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Controls.Add(this.btnidm);
             this.Controls.Add(this.mainpanel);
+            this.Controls.Add(this.btnAppOpener);
+            this.Controls.Add(this.btnidm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainPage";
+            this.ShowIcon = false;
             this.ResumeLayout(false);
 
         }
@@ -64,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnidm;
+        private System.Windows.Forms.Button btnAppOpener;
         private System.Windows.Forms.Panel mainpanel;
     }
 }

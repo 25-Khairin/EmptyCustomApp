@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppOpener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppOpener.Designer.cs">
+      <DependentUpon>AppOpener.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppOpener.resx">
+      <DependentUpon>AppOpener.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en-SG.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

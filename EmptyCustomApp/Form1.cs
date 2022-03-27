@@ -36,7 +36,11 @@ namespace EmptyCustomApp
         private void btnidm_Click(object sender, EventArgs e)
         {
             LoadForm(new IDM());
-            btnidm.Hide();
+        }
+
+        private void btnAppOpener_Click(object sender, EventArgs e)
+        {
+            LoadForm(new AppOpener());
         }
     }
 }
