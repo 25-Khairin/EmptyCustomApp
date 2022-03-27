@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace EmptyCustomApp
 {
@@ -23,10 +24,14 @@ namespace EmptyCustomApp
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             // Will Show User Save/Location Dialog 
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Title = "Save File Location";
-            sfd.ShowDialog();
-            txbSave.Text = sfd.FileName;
+            using (FolderBrowserDialog fdb = new FolderBrowserDialog() { Description = "Save File Location" })
+            {
+                if (fdb.ShowDialog() == DialogResult.OK)
+                {
+                    string filepath = Path.GetFullPath(fdb.SelectedPath) + @"\" +Path.GetFileName(new Uri(txbUrl.Text).AbsolutePath);
+                    txbSave.Text = filepath;
+                }
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
