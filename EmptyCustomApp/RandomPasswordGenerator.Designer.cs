@@ -38,6 +38,7 @@
             this.txbResult = new System.Windows.Forms.TextBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnCopy = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.tkbValue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +87,7 @@
             // 
             // tkbValue
             // 
-            this.tkbValue.Location = new System.Drawing.Point(255, 151);
+            this.tkbValue.Location = new System.Drawing.Point(255, 177);
             this.tkbValue.Maximum = 60;
             this.tkbValue.Minimum = 6;
             this.tkbValue.Name = "tkbValue";
@@ -99,7 +100,7 @@
             // 
             this.lblScrollval.AutoSize = true;
             this.lblScrollval.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScrollval.Location = new System.Drawing.Point(467, 160);
+            this.lblScrollval.Location = new System.Drawing.Point(467, 177);
             this.lblScrollval.Name = "lblScrollval";
             this.lblScrollval.Size = new System.Drawing.Size(14, 16);
             this.lblScrollval.TabIndex = 6;
@@ -109,7 +110,7 @@
             // 
             this.lblScrollMsg.AutoSize = true;
             this.lblScrollMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScrollMsg.Location = new System.Drawing.Point(279, 190);
+            this.lblScrollMsg.Location = new System.Drawing.Point(279, 216);
             this.lblScrollMsg.Name = "lblScrollMsg";
             this.lblScrollMsg.Size = new System.Drawing.Size(191, 17);
             this.lblScrollMsg.TabIndex = 7;
@@ -118,7 +119,7 @@
             // txbResult
             // 
             this.txbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbResult.Location = new System.Drawing.Point(190, 232);
+            this.txbResult.Location = new System.Drawing.Point(190, 258);
             this.txbResult.Name = "txbResult";
             this.txbResult.Size = new System.Drawing.Size(349, 20);
             this.txbResult.TabIndex = 8;
@@ -126,7 +127,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.Location = new System.Drawing.Point(327, 272);
+            this.btnGenerate.Location = new System.Drawing.Point(327, 298);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(87, 26);
             this.btnGenerate.TabIndex = 9;
@@ -137,7 +138,7 @@
             // btnCopy
             // 
             this.btnCopy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopy.Location = new System.Drawing.Point(545, 228);
+            this.btnCopy.Location = new System.Drawing.Point(545, 254);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(61, 27);
             this.btnCopy.TabIndex = 10;
@@ -145,11 +146,23 @@
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(293, 150);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(195, 21);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "Include Special Characters";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // RandomPasswordGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.txbResult);
@@ -181,5 +194,6 @@
         private System.Windows.Forms.TextBox txbResult;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

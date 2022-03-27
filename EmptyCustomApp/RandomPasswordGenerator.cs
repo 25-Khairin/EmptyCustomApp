@@ -48,7 +48,7 @@ namespace EmptyCustomApp
         {
             try
             {
-                txbResult.Text = PassGen(ckbSL.Checked, ckbBL.Checked, ckbNL.Checked, tkbValue.Value);
+                txbResult.Text = PassGen(ckbSL.Checked, ckbBL.Checked, ckbNL.Checked, checkBox1.Checked, tkbValue.Value);
             }
             catch
             {
@@ -59,11 +59,12 @@ namespace EmptyCustomApp
             }
         }
 
-        public string PassGen(bool sL, bool bL, bool nL, int len)
+        public string PassGen(bool sL, bool bL, bool nL, bool sC, int len)
         {
             const string SL = "abcdefghijklmnopqrstuvwxyz";
             const string BL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             const string NL = "0123456789";
+            const string SC = @"~!@#$%^&*()+=-";
 
             char[] password = new char[len];
             string charset = "";
@@ -75,6 +76,8 @@ namespace EmptyCustomApp
                 charset += BL;
             if (nL) 
                 charset += NL;
+            if (sC)
+                charset += SC;
 
             for (int i = 0; i < len;  i++)
             {
