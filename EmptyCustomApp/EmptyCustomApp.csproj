@@ -64,6 +64,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HashChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashChecker.Designer.cs">
+      <DependentUpon>HashChecker.cs</DependentUpon>
+    </Compile>
     <Compile Include="IDM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HashChecker.resx">
+      <DependentUpon>HashChecker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IDM.resx">
       <DependentUpon>IDM.cs</DependentUpon>

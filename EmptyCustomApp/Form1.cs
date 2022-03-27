@@ -47,5 +47,15 @@ namespace EmptyCustomApp
         {
             LoadForm(new RandomPasswordGenerator());
         }
+
+        private void btnHashChecker_Click(object sender, EventArgs e)
+        {
+            LoadForm(new HashChecker());
+        }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

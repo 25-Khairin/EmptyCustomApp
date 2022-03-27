@@ -35,10 +35,10 @@
             this.tkbValue = new System.Windows.Forms.TrackBar();
             this.lblScrollval = new System.Windows.Forms.Label();
             this.lblScrollMsg = new System.Windows.Forms.Label();
-            this.txbResult = new System.Windows.Forms.TextBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnCopy = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txbResult = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tkbValue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,14 +116,6 @@
             this.lblScrollMsg.TabIndex = 7;
             this.lblScrollMsg.Text = "Password is easily crackable!";
             // 
-            // txbResult
-            // 
-            this.txbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbResult.Location = new System.Drawing.Point(190, 258);
-            this.txbResult.Name = "txbResult";
-            this.txbResult.Size = new System.Drawing.Size(349, 20);
-            this.txbResult.TabIndex = 8;
-            // 
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,7 +130,7 @@
             // btnCopy
             // 
             this.btnCopy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopy.Location = new System.Drawing.Point(545, 254);
+            this.btnCopy.Location = new System.Drawing.Point(577, 249);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(61, 27);
             this.btnCopy.TabIndex = 10;
@@ -157,15 +149,26 @@
             this.checkBox1.Text = "Include Special Characters";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // txbResult
+            // 
+            this.txbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbResult.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.txbResult.Location = new System.Drawing.Point(131, 251);
+            this.txbResult.Multiline = false;
+            this.txbResult.Name = "txbResult";
+            this.txbResult.Size = new System.Drawing.Size(440, 20);
+            this.txbResult.TabIndex = 12;
+            this.txbResult.Text = "";
+            // 
             // RandomPasswordGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txbResult);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.btnGenerate);
-            this.Controls.Add(this.txbResult);
             this.Controls.Add(this.lblScrollMsg);
             this.Controls.Add(this.lblScrollval);
             this.Controls.Add(this.tkbValue);
@@ -191,9 +194,9 @@
         private System.Windows.Forms.TrackBar tkbValue;
         private System.Windows.Forms.Label lblScrollval;
         private System.Windows.Forms.Label lblScrollMsg;
-        private System.Windows.Forms.TextBox txbResult;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnCopy;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RichTextBox txbResult;
     }
 }
